@@ -1,12 +1,17 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import Header from "@/components/header";
+import Herosection from "@/components/herosection";
+import Aboutme from "@/components/aboutme";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main>
-      <h1 className="text-9xl text-red-500">Hello Pinecone</h1>
+      <Header />
+      <Herosection />
+      <Aboutme />
     </main>
   );
 }
