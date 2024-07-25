@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import { MdOutlineWbSunny } from "react-icons/md";
+
 const atags = [
   { name: "About", link: "#about" },
   { name: "Work", link: "#work" },
@@ -15,7 +17,7 @@ const Navbar = () => {
       </div>
       <div className="bg-gray-100 h-6 w-[1px]"></div>
       <div className="flex justify-center items-center gap-4">
-        <button>
+        <button onClick={() => {}}>
           <MdOutlineWbSunny />
         </button>
         <button className="btn-primary">Download CV</button>
