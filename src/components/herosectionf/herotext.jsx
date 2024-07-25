@@ -5,7 +5,7 @@ const Herotext = () => {
     <div className="flex flex-col gap-12">
       <div className="w-[600px]">
         <h1 className="text-[60px] font-[700]">Hi, I’m UNU 👋</h1>
-        <p className="text-[16px] text-gray-600">
+        <p className="text-[16px] text-gray-600 dark:text-white">
           I specialize in full stack development, particularly with React.js and
           Node.js. My main goal is to create exceptional digital experiences
           that are fast, visually appealing, and accessible to everyone. With

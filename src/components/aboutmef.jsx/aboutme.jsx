@@ -3,7 +3,7 @@ import Abtext from "./abtext";
 
 const Aboutme = () => {
   return (
-    <section className="bg-gray-50 py-24">
+    <section className="bg-gray-50 py-24 dark:bg-[#111827] dark:text-white">
       <div className="container m-auto">
         <div className="flex items-center justify-center">
           <Label text="About me" />

@@ -5,11 +5,11 @@ const skilllogo = [
   },
   {
     name: "HTML",
-    zurag: "/image/css.png",
+    zurag: "/image/html-5.png",
   },
   {
     name: "Javascript",
-    zurag: "/image/css.png",
+    zurag: "/image/js.png",
   },
   {
     name: "Next.js",
@@ -17,7 +17,7 @@ const skilllogo = [
   },
   {
     name: "React",
-    zurag: "/image/css.png",
+    zurag: "/image/atom.png",
   },
   {
     name: "Node.js",
@@ -38,9 +38,11 @@ const Logo = () => {
     <div className="flex container m-auto mt-12">
       {skilllogo.map((logos) => {
         return (
-          <div className="flex-1 w-[88px] h-[100px] flex flex-col items-center">
+          <div className="w-[88px] h-[100px] flex flex-col items-center m-auto">
             <img src={logos.zurag} alt="photo" />
-            <p className="text-[18px] font-[400] text-gray-600">{logos.name}</p>
+            <p className="text-[18px] font-[400] text-gray-600 dark:text-white">
+              {logos.name}
+            </p>
           </div>
         );
       })}

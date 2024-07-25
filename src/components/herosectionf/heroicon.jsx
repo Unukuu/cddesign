@@ -10,7 +10,7 @@ const heroIcon = [
 ];
 const Heroicon = () => {
   return (
-    <div className="flex items-center gap-3 text-2xl text-gray-500">
+    <div className="flex items-center gap-3 text-2xl text-gray-500 dark:text-white">
       {heroIcon.map((icon) => {
         return icon;
       })}
