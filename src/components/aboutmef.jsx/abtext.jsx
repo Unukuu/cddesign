@@ -1,6 +1,6 @@
 const Abtext = () => {
   return (
-    <div className="w-[584px] flex flex-col gap-3">
+    <div className="flex-1 flex flex-col gap-3">
       <h1 className="text-[30px] text-gray-900 font-semibold dark:text-white">
         Curious about me? Here you have it:
       </h1>

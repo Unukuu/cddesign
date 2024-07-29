@@ -35,7 +35,7 @@ const skilllogo = [
 
 const Logo = () => {
   return (
-    <div className="flex container m-auto mt-12">
+    <div className="flex flex-wrap container m-auto mt-12">
       {skilllogo.map((logos) => {
         return (
           <div className="w-[88px] h-[100px] flex flex-col items-center m-auto">

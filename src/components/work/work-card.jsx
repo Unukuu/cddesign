@@ -3,12 +3,8 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 
 const WorkCard = ({ wobject, swap }) => {
   return (
-    <div
-      className={` flex w-[1440x] h-[480px] mt-12 ${
-        swap ? "" : "flex-row-reverse"
-      }`}
-    >
-      <div className="flex-1 bg-gray-100 flex items-center justify-center dark:bg-[#1F2937]">
+    <div className={` md:flex mt-12 ${swap ? "" : "flex-row-reverse"}`}>
+      <div className="flex-1 bg-gray-100 py-4 flex items-center justify-center dark:bg-[#1F2937]">
         <img
           className="w-[480px] h-[384px] rounded-xl"
           src={wobject.image}

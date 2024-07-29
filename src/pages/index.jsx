@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="dark:bg-[#030712]">
+    <main className="dark:bg-[#030712] relative">
       <Header />
       <Herosection />
       <Aboutme />

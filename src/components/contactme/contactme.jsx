@@ -11,12 +11,12 @@ const Contactme = () => {
         What’s next? Feel free to reach out to me if you're looking for a
         developer, have a query, or simply want to connect.
       </p>
-      <div className="flex gap-8  items-center text-4xl font-semibold">
+      <div className="flex gap-8  items-center md:text-4xl font-semibold">
         <MdOutlineEmail />
         <p>unu@pinecone.mn</p>
         <TbBoxMultiple />
       </div>
-      <div className="flex gap-8  items-center text-4xl font-semibold">
+      <div className="flex gap-8  items-center md:text-4xl font-semibold">
         <LuPhone />
         <p>+976 80070498</p>
         <TbBoxMultiple />

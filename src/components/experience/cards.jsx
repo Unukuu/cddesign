@@ -46,7 +46,7 @@ const Cards = () => {
     <div>
       {expCards.map((card) => {
         return (
-          <section className="flex m-auto w-[896px] bg-white dark:bg-[#1f2937] p-8 rounded-xl mt-12">
+          <section className="md:flex m-auto bg-white dark:bg-[#1f2937] p-8 rounded-xl mt-12">
             <div className="flex-1">
               <img src={card.logoCom} alt="photo1" />
             </div>

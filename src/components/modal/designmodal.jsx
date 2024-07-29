@@ -1,24 +1,36 @@
+import { HiOutlineXMark } from "react-icons/hi2";
 import { useEffect, useState } from "react";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { IoMoonOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 const atags = [
   { name: "About", link: "#about" },
   { name: "Work", link: "#work" },
   { name: "Testimonials", link: "#Testimonials" },
   { name: "Contact", link: "#Contact" },
 ];
-const Navbar = () => {
+const Designmodal = () => {
   const [theme, setTheme] = useState(true);
   return (
-    <nav className="md:flex items-center gap-6 dark:text-white hidden">
-      <div className="flex gap-6 items-center text-gray-600 text-[16px] dark:text-white ">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="box w-[320px] h-[667px] bg-white absolute dark:bg-black right-0 top-14 border-solid border-[1px] border-gray-100 flex flex-col gap-10 p-3"
+    >
+      <div className="flex justify-between text-3xl font-[900] text-[#111827] dark:text-white">
+        <p>UNU</p>
+        <button>
+          <HiOutlineXMark />
+        </button>
+      </div>
+      <div className="flex p-4 gap-4 flex-col text-gray-600 dark:text-white border-y-[1px] border-solid border-gray-500">
         {atags.map((value) => {
           return <a href={value.link}>{value.name}</a>;
         })}
       </div>
-      <div className="bg-gray-100 h-6 w-[1px]"></div>
-      <div className="flex justify-center items-center gap-4">
-        <button>
+      <div className="flex justify-between text-gray-600 dark:text-white">
+        <p>Switch theme</p>
+        <button className="text-xl">
           {theme ? (
             <MdOutlineWbSunny
               onClick={() => {
@@ -35,11 +47,8 @@ const Navbar = () => {
             />
           )}
         </button>
-        <button className="btn-primary dark:bg-white dark:text-black">
-          Download CV
-        </button>
       </div>
-    </nav>
+    </motion.div>
   );
 };
-export default Navbar;
+export default Designmodal;
