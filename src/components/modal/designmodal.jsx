@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { IoMoonOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
+import { useTheme } from "next-themes";
 const atags = [
   { name: "About", link: "#about" },
   { name: "Work", link: "#work" },
@@ -10,7 +11,7 @@ const atags = [
   { name: "Contact", link: "#Contact" },
 ];
 const Designmodal = () => {
-  const [theme, setTheme] = useState(true);
+  const { theme, setTheme } = useTheme();
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -31,18 +32,16 @@ const Designmodal = () => {
       <div className="flex justify-between text-gray-600 dark:text-white">
         <p>Switch theme</p>
         <button className="text-xl">
-          {theme ? (
+          {theme === "light" ? (
             <MdOutlineWbSunny
               onClick={() => {
-                setTheme(false);
-                document.documentElement.classList.add("dark");
+                setTheme("dark");
               }}
             />
           ) : (
             <IoMoonOutline
               onClick={() => {
-                setTheme(true);
-                document.documentElement.classList.remove("dark");
+                setTheme("light");
               }}
             />
           )}

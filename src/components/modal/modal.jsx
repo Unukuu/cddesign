@@ -14,7 +14,7 @@ const Modal = () => {
       >
         <CiMenuBurger />
       </button>
-      {modal ? <Designmodal /> : ""}
+      {modal ? <Designmodal /> : null}
     </>
   );
 };
